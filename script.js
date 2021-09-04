@@ -1,3 +1,5 @@
+//This function accepts an array and integer. This function calculate the max sum of n consecutive elements.
+
 // Sub function for 1st Solution
 function addArrayValues(arr,x,y){
     if (y >= arr.length){
@@ -32,4 +34,4 @@ y = num - 1;
 return Math.max(...collection);
 }
 
-console.log(maxSubArraySum([2,2], 2));
+console.log(maxSubArraySum([2,2,2,3,1,100], 2));
