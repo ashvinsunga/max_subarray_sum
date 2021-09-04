@@ -15,8 +15,13 @@ function addArrayValues(arr,x,y){
 
 //1st Solution
 function maxSubArraySum(arr, num){
+// Checks invalid arguments
+    if(arr.length === 0 || arr.length < num){
+        return "Invalid value on first argument!";
+    }
 collection = [];
 y = num - 1;
+
 //Create a loop for p1 that will stop when p2(num) hits the end of array
     for(let x = 0; y < arr.length; x++){
 //Every loop adds the numbers between p1 and p2 then pushes it to the collection array
@@ -27,4 +32,4 @@ y = num - 1;
 return Math.max(...collection);
 }
 
-console.log(maxSubArraySum([1,2,5,2,8,1,5], 2));
+console.log(maxSubArraySum([2,2], 2));
